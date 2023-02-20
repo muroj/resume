@@ -116,6 +116,17 @@
       "name": "Software Development"
     }
   ],
+  "education": [
+    {
+      "institution": "Marist College",
+      "location": "Poughkeepsie, New York",
+      "area": "Computer Science",
+      "studyType": "BS",
+      "startDate": "",
+      "gpa": "3.7",
+      "endDate": "May 2014"
+    }
+  ],
   "sections": [
     "templates",
     "profile",
