@@ -1,0 +1,136 @@
+{
+  "selectedTemplate": 2,
+  "headings": {
+    "work": "Experience",
+    "skills": "Skills",
+    "projects": "Projects",
+    "education": "Education"
+  },
+  "basics": {
+    "name": "Joseph Muro",
+    "website": "linkedin.com/in/jmuro0321",
+    "location": {
+      "address": "NY"
+    },
+    "email": "jmuro0321@gmail.com"
+  },
+  "work": [
+    {
+      "highlights": [
+        "Support, administer, and maintain cloud-based Supply Chain Modeling platform running on a mix of home-grown KOPS and EKS-based k8s clusters, and Windows EC2 instances",
+        "Run production deployments in collaboration with engineering and QA teams",
+        "Create and maintain platform automation code, including chef recipes, ansible scripts, custom terraform modules, python scripts, docker files, powershell scripts, and helm charts",
+        "Collaborate with devs to implement new features by identifying and provisioning new infrastructure as necessary",
+        "Maintain CI/CD infrastructure and tooling, including Jenkins, Windows and Linux Jenkins agents, custom Groovy Library and Artifactory"
+      ],
+      "company": "Coupa Software",
+      "location": "Remote",
+      "startDate": "February 2022",
+      "endDate": "Present",
+      "position": "Senior SRE"
+    },
+    {
+      "highlights": [
+        "Manage a backlog of customer support requests ranging from diagnosing complex technical issues to recommending CI/CD best practices",
+        "Support customers during critical system down incidents by providing accurate, timely problem diagnose and clear resolution steps",
+        "Re-create product issues and collaborate with engineering to deliver bug fixes",
+        "Contribute to product through creation of knowledge base articles, documentation fixes, and reporting software bugs"
+      ],
+      "company": "CloudBees",
+      "position": "Senior Development Support Engineer",
+      "location": "Remote",
+      "startDate": "July 2020",
+      "endDate": "July 2021"
+    },
+    {
+      "company": "IBM",
+      "location": "Poughkeepsie, NY",
+      "position": "Linux Software Engineer",
+      "website": "",
+      "startDate": "May 2019",
+      "highlights": [
+        "Verification and scale testing of KVM and virtualization solutions on system Z for various linux distros",
+        "Find software bugs and determine root-cause, follow-through with development team to ensure bug resolution",
+        "As technical lead, facilitate stand-ups and retrospectives, collaborate on testcase design and prioritization, remove blockers",
+        "Drive adoption of modern infrastructure automation tools through education, workshops, and by supporting team members",
+        "Collaborate with IBM KVM development team to plan and prioritize for upcoming test cycle"
+      ],
+      "endDate": "April 2020"
+    },
+    {
+      "highlights": [
+        "Participated in the entire SDLC, from discovery to deployment and maintenance, of two OS-level components",
+        "Led adoption of a modern CI pipeline resulting in improved code quality and a streamlined developer experience",
+        "As iteration manager, facilitated daily stand-ups, user story sessions, design discussions, and retrospectives"
+      ],
+      "company": "IBM",
+      "position": "z/OS Software Engineer",
+      "location": "Poughkeepsie, NY",
+      "startDate": "May 2014",
+      "endDate": "May 2019"
+    }
+  ],
+  "skills": [
+    {
+      "level": "",
+      "keywords": [
+        "AWS EC2, VPC, IAM, RDS, EKS, Route53, ECR, SecretsManager, EFS"
+      ],
+      "name": "Cloud"
+    },
+    {
+      "level": "",
+      "keywords": [
+        "Kubernetes, Hashicorp Consul & Vault, JFrog Artifactory, SonarQube, Jenkins, Windows AD, RabbitMQ"
+      ],
+      "name": "Infrastrucuture"
+    },
+    {
+      "level": "",
+      "keywords": [
+        "Terragrunt, Terraform, Ansible, Chef, Helm, Packer"
+      ],
+      "name": "Infrastructure-as-Code"
+    },
+    {
+      "level": "",
+      "keywords": [
+        "Docker, EC2, libvirt, KVM"
+      ],
+      "name": "Virtualization"
+    },
+    {
+      "level": "",
+      "keywords": [
+        "Jenkins, Git, GitHub, GitHub Actions, ArgoCD"
+      ],
+      "name": "CI/CD"
+    },
+    {
+      "level": "",
+      "keywords": [
+        "Python, Bash, Powershell, Golang, Groovy (mainly Jenkins shared libraries) and Ruby (Chef Recipes), C & Java (past experience)",
+        ""
+      ],
+      "name": "Software Development"
+    }
+  ],
+  "education": [
+    {
+      "institution": "Marist College",
+      "location": "Poughkeepsie, New York",
+      "area": "Computer Science",
+      "studyType": "BS",
+      "startDate": "",
+      "gpa": "3.7",
+      "endDate": "May 2014"
+    }
+  ],
+  "sections": [
+    "templates",
+    "profile",
+    "work",
+    "skills",
+    "education"
+  ]
+}
