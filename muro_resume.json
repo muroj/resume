@@ -17,11 +17,11 @@
   "work": [
     {
       "highlights": [
-        "Support, administer, and maintain cloud-based Supply Chain Modeling platform running on a mix of home-grown KOPS and EKS-based k8s clusters, and Windows EC2 instances",
-        "Run production deployments in collaboration with engineering and QA teams",
-        "Create and maintain platform automation code, including chef recipes, ansible scripts, custom terraform modules, python scripts, docker files, powershell scripts, and helm charts",
-        "Collaborate with devs to implement new features by identifying and provisioning new infrastructure as necessary",
-        "Maintain CI/CD infrastructure and tooling, including Jenkins, Windows and Linux Jenkins agents, custom Groovy Library and Artifactory"
+        "Support the development team with all things CI/CD, Infrastructure, and platform-related, including running production deployments, debugging platform code, configuring Datadog monitors and alerts.",
+        "Prototyped a custom terraform provider (golang) to enable Infrastructure-as-Code for internally visible API objects. Replacing toilsome platform configuration steps with the standard terraform workflow. Automated custom provider testing and syntax verification using GitHub actions",
+        "Replaced toilsome AMI creation and promotion process with an automated, self-service process using Jenkins, Vault, and Packer",
+        "Replaced static Jenkins build nodes with dynamic nodes built with Hashicorp packer. Resulting in an improved security posture (AMI could be rebuilt and deployed on demand), and less toil maintaining \"pet\" infrastructure",
+        "Maintain (and replace) various chef recipes, ansible playbooks, Jenkinsfiles, groovy libraries, terraform modules, python scripts, dockerfiles, powershell scripts, and helm charts"
       ],
       "company": "Coupa Software",
       "location": "Remote",
@@ -31,10 +31,11 @@
     },
     {
       "highlights": [
+        "Support customers during critical system outages by providing accurate, timely problem diagnoses and clear resolution steps",
+        "Help customers deploy CloudBees CI to various K8S environments (AWS EKS, GCP, Rancher, self-hosted) using Helm",
         "Manage a backlog of customer support requests ranging from diagnosing complex technical issues to recommending CI/CD best practices",
-        "Support customers during critical system down incidents by providing accurate, timely problem diagnose and clear resolution steps",
         "Re-create product issues and collaborate with engineering to deliver bug fixes",
-        "Contribute to product through creation of knowledge base articles, documentation fixes, and reporting software bugs"
+        "Create customer facing knowledge base articles and documentation fixes"
       ],
       "company": "CloudBees",
       "position": "Senior Development Support Engineer",
