@@ -17,11 +17,11 @@
   "work": [
     {
       "highlights": [
-        "Support the development team with all things CI/CD, Infrastructure, and platform, including running production deployments, debugging platform code, configuring Datadog monitors and alerts",
-        "Prototyped a custom terraform provider (golang) to enable Infrastructure-as-Code for internally visible API objects. Replacing toilsome platform configuration steps with the standard terraform workflow",
+        "Developed a custom terraform provider to replace manual configuration steps with the standard terraform workflow",
         "Replaced toilsome AMI creation and promotion process with an automated, self-service process using Jenkins, Vault, and Packer",
         "Replaced static Jenkins build nodes with dynamic nodes using a packer-based AMI. This resulted in an improved security posture (nodes run latest OS by re-building base AMI), and less toil maintaining \"pet\" infrastructure",
-        "Maintain (replace, or delete where possible) various chef recipes, ansible playbooks, Jenkinsfiles, groovy libraries, terraform modules, python scripts, dockerfiles, powershell scripts, helm charts, and packer templates"
+        "Maintain chef recipes, ansible playbooks, Jenkinsfiles, groovy libraries, terraform modules, python scripts, dockerfiles, powershell scripts, helm charts, and packer templates",
+        "Provide support for several prod and pre-pod platform environments each composed of multiple k8s clusters and various Windows and Linux cloud instances"
       ],
       "company": "Coupa Software",
       "location": "Remote",
