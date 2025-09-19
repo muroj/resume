@@ -10,32 +10,58 @@
     "name": "Joseph Muro",
     "website": "linkedin.com/in/jmuro0321",
     "location": {
-      "address": "NY"
+      "address": "Atlanta Metro Area, GA"
     },
     "email": "jmuro0321@gmail.com"
   },
+  "education": [
+    {
+      "institution": "Marist College",
+      "location": "Poughkeepsie, New York",
+      "area": "Computer Science",
+      "studyType": "BS",
+      "startDate": "",
+      "gpa": "3.7",
+      "endDate": "May 2014"
+    }
+  ],
   "work": [
     {
       "highlights": [
-        "Developed a custom terraform provider to replace manual configuration steps with the standard terraform workflow",
-        "Replaced toilsome AMI creation and promotion process with an automated, self-service process using Jenkins, Vault, and Packer",
-        "Replaced static Jenkins build nodes with dynamic nodes using a packer-based AMI. This resulted in an improved security posture (nodes run latest OS by re-building base AMI), and less toil maintaining \"pet\" infrastructure",
-        "Maintain chef recipes, ansible playbooks, Jenkinsfiles, groovy libraries, terraform modules, python scripts, dockerfiles, powershell scripts, helm charts, and packer templates",
-        "Provide support for several prod and pre-pod platform environments each composed of multiple k8s clusters and various Windows and Linux cloud instances"
+        "Support our platform CI/CD pipelines including Jenkins scripts, terragrunt config, ArgoCD deployments, Helm Charts and Kustomize manifests",
+        "Maintain and create new terraform modules as needed to automate workflows and reduce manual, error-prone toil", 
+        "Contribute to our monitoring stack by creating new Grafana dashboards and alerts, defined in code (Prometheus + Grafana + Cortex, Python)",
+        "Contributed new features and bug fixes to our internal TUI/CLI tool (golang)",
+        "Maintenance and support of our Azure Infrastructure including linux and Windows VMs and all supporting Azure services",
+        "Work with our internal FinOps team to reduce cloud operating costs by modifying terraform modules"
+      ],
+      "company": "Axon Software",
+      "location": "Remote",
+      "startDate": "September 2024",
+      "position": "Site Reliability Engineer II"
+    },
+    {
+      "highlights": [
+        "Support, manage and maintain production and pre-production kubernetes clusters using various tools, including kops, terraform, helm, k9s",
+        "Maintain terraform modules, helm charts, ruby scripts and supporting CI/CD infrastructure (custom GitHub actions, ArgoCD, Vault, terragrunt)",
+        "Collaborate with engineering team to deploy new k8s features to improve service uptime and security",
+        "Continuously improve monitoring and alerting to ensure platform availability and uptime (Grafana + Prometheus + TICK stack)",
+        "Led incident response and RCA for production-related incidents and devise action plan",
+        "Assisted with hiring by conducted interviews for SRE roles as needed"
       ],
       "company": "Coupa Software",
       "location": "Remote",
       "startDate": "February 2022",
-      "endDate": "Present",
-      "position": "Senior SRE"
+      "endDate": "April 2024",
+      "position": "Senior SRE - Supply Chain Devlopment"
     },
     {
       "highlights": [
+        "Assisted customers with end-to-end deployment of CloudBees CI to kubernetes (AWS EKS, GKS, Azure, self-hosted) via live screen-sharing sessions (and email)",
         "Support customers during critical system outages by providing accurate, timely problem diagnoses and clear resolution steps",
-        "Help customers deploy CloudBees CI to various K8S environments (AWS EKS, GCP, Rancher, self-hosted) using Helm",
         "Manage a backlog of customer support requests ranging from diagnosing complex technical issues to recommending CI/CD best practices",
-        "Re-create product issues and collaborate with engineering to deliver bug fixes",
-        "Create customer facing knowledge base articles and documentation fixes"
+        "Report bugs and collaborate with engineering to test and deliver fixes",
+        "Contribute to customer-facing knowledge base and improve product documentation"
       ],
       "company": "CloudBees",
       "position": "Senior Development Support Engineer",
@@ -46,23 +72,24 @@
     {
       "company": "IBM",
       "location": "Poughkeepsie, NY",
-      "position": "Linux Software Engineer",
+      "position": "Linux Solutions Test Engineer",
       "website": "",
       "startDate": "May 2019",
       "highlights": [
-        "Verification and scale testing of KVM and virtualization solutions on system Z for various linux distros",
-        "Find software bugs and determine root-cause, follow-through with development team to ensure bug resolution",
-        "As technical lead, facilitate stand-ups and retrospectives, collaborate on testcase design and prioritization, remove blockers",
-        "Drive adoption of modern infrastructure automation tools through education, workshops, and by supporting team members",
-        "Collaborate with IBM KVM development team to plan and prioritize for upcoming test cycle"
+        "Replaced ad-hoc homegrown bash scripts with terraform for provisioning libvirt-based virtual machines on system Z",
+        "Converted chef recipes to ansible playbooks",
+        "Perform root-cause analysis on various network, storage, and virtualization related-bugs using linux shell utilities (tcpdump, ptrace, etc)",
+        "Collaborated with IBM KVM development team to plan and prioritize upcoming test cycle",
+        "Helped educate teammates on modern infrastucture-as-code tools (ansible, terraform, docker) with hands-on workshops and documentation"
       ],
       "endDate": "April 2020"
     },
     {
       "highlights": [
-        "Participated in the entire SDLC, from discovery to deployment and maintenance, of two OS-level components",
-        "Led adoption of a modern CI pipeline resulting in improved code quality and a streamlined developer experience",
-        "As iteration manager, facilitated daily stand-ups, user story sessions, design discussions, and retrospectives"
+        "Developed, maintained, and supported two z/OS system APIs: an HTTP client library (C code), and a backend API for automating system Z hardware configuration (various languages)",
+        "As iteration manager, facilitated daily stand-ups, user story sessions, design discussions, and retrospectives",
+        "Developed a CLI application (in C) to generate and run tests against HTTP/JSON client library",
+        "Led migration from manual build process to automated CI pipeline (RTCBuild with Jenkins) resulting in improved code quality and a streamlined developer experience"
       ],
       "company": "IBM",
       "position": "z/OS Software Engineer",
@@ -75,14 +102,14 @@
     {
       "level": "",
       "keywords": [
-        "AWS EC2, VPC, IAM, RDS, EKS, Route53, ECR, SecretsManager, EFS"
+        "AWS EC2, VPC, IAM, S3, RDS, EKS, Route53, ECR, SecretsManager, EFS, WAF, SQS, SNS, CloudWatch, CertificateManager, Lambda, Azure Compute"
       ],
       "name": "Cloud"
     },
     {
       "level": "",
       "keywords": [
-        "Kubernetes, Hashicorp Consul & Vault, JFrog Artifactory, SonarQube, Jenkins, Windows AD, RabbitMQ"
+        "Kubernetes, Hashicorp Consul & Vault, JFrog Artifactory, SonarQube, Jenkins, RabbitMQ, PingFederate"
       ],
       "name": "Infrastrucuture"
     },
@@ -103,35 +130,71 @@
     {
       "level": "",
       "keywords": [
-        "Jenkins, Git, GitHub, GitHub Actions, ArgoCD"
+        "Jenkins, GitHub, GitHub Actions, ArgoCD"
       ],
       "name": "CI/CD"
     },
     {
       "level": "",
       "keywords": [
-        "Python, Bash, Powershell, Golang, Groovy (mainly Jenkins shared libraries) and Ruby (Chef Recipes), C & Java (past experience)",
-        ""
+        "Python, Bash, Powershell, Golang, Groovy, Ruby, C & Java"
       ],
       "name": "Software Development"
     }
   ],
-  "education": [
+  "projects": [
     {
-      "institution": "Marist College",
-      "location": "Poughkeepsie, New York",
-      "area": "Computer Science",
-      "studyType": "BS",
-      "startDate": "",
-      "gpa": "3.7",
-      "endDate": "May 2014"
+      "keywords": [
+        "golang, Make, terraform"
+      ],
+      "description": "Implemented a custom terraform provider to replace manual, error-prone process with Configuration-as-Code",
+      "name": "SCDP (Supply Chain Design & Planning) Terraform Provider"
+    },
+    {
+      "keywords": [
+        "golang, GitHub actions, terraform"
+      ],
+      "description": "Implemented a custom terraform provider to replace manual, error-prone process with Configuration-as-Code",
+      "name": "SCDP (Supply Chain Design & Planning) Terraform Provider"
+    },
+    {
+      "keywords": [
+        "python, terraform, github, AWS alb + nlb"
+      ],
+      "name": "ALB Terraform Module v6 to v9 Upgrade",
+      "description": "We used a OSS terraform module to manage all of our customer facing load balancers. We needed to upgrade to v9 to ensure we could continue to use terraform to manage these LBs.  Otherwise, we'd have to manually manage sensitive configuration for over four dozen customer facing load balancers. This required creating a python script to automate changes to the terraform state to ensure zero customer downtime.",
+      "url": "https://github.com/terraform-aws-modules/terraform-aws-alb/blob/master/UPGRADE-9.0.md"
+    },
+    {
+      "keywords": [
+        "chef, aws ec2, grafana, telegraf"
+      ],
+      "name": "Upgrade PingFederate SSO Solution",
+      "description": "Upgrade and rollout the Chef recipes responsible for deploying our PingFederate SSO solution to ensure continued support and maintain FedRamp compliance"
+    },
+    {
+      "keywords": [
+        "AWS ec2, AWS cost explorer"
+      ],
+      "description": "Identified over-provisioned and unused infrastucture for decomissioning resulting in annual savings of over $300K",
+      "name": "SCDP (Supply Chain Design & Planning) Cost Savings"
+    },
+    {
+      "keywords": [
+        "kops (kubernetes operations), helm, eks, hashicorp, vault"
+      ],
+      "name": "Kubernetes upgrade from 1.14 to 1.23 ",
+      "description": "All of our clusters for the Supply Chain Platform were running a (grossly) outdated version of k8s (1.14). I led the upgrade to a supported version (1.23) ensuring minimal downtime. I also (painstakingly) documented the upgrade progress for future SREs"
     }
   ],
+  "awards": [],
   "sections": [
     "templates",
     "profile",
     "work",
+    "projects",
     "skills",
-    "education"
+    "education",
+    "awards"
   ]
 }
