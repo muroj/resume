@@ -61,21 +61,19 @@ The upgrade was successful. The end result was the cluster was running a support
 
 # Implemented PodPriorities to Remove Manual Operator Intervention
 
-Problem: Release cycles required manual scheduling tweaks to ensure critical workloads were deployed before lower-priority ones.
-Actions:
+## Situation
 
-Designed and implemented PodPriority and Preemption policies across namespaces.
+Our software release cycle usually triggered a restart of all kubernetes Deployments and StatefulSets to pick up the latest container image version. This restart would normally result in several critical pods getting stuck in NotReady state due to insufficient resources on the worker nodes, even though there was sufficient capacity on the whole cluster. but the scheduler did not have enough context to ensure all pods would get scheduled. Resolving this would require manual operator intervention: an SRE would manually kill some non-critical pods to allow the critical pods to be scheduled. For any computer science nerds, this was an instance of the [bin-packing problem.](https://en.wikipedia.org/wiki/Bin_packing_problem).
 
-Identified critical workloads and mapped them to appropriate priority classes.
+## Task
 
-Tested eviction behavior and validated disruption impact.
-Impact:
+Automate the manual steps taken by the operator to resolve the pod scheduling issue.
 
-Eliminated manual operator steps from the deployment process.
+## Actions
 
-Improved release reliability and reduced deployment delays.
+I used PodPriority and Preemption policies to provide the scheduler with enough context to resolve the scheduling issues. To do this, I worked with the development team to classify each service into an appropriate priority level: high, medium or low. Services with high priority, such as user login or pods serving the web front end, could preempt lower priority services. I tested the eviction behavior to ensure it functioned as we intended.
 
-Why this works: Shows ability to modify cluster scheduling behavior and improve platform ergonomics.
+Result: Redued manual operator toil. Captured the desired application state in code.  Improved release reliability and reduced deployment delays.
 
 # Rebuilt Machine Image Pipeline to Enable Developer Self-Service
 
