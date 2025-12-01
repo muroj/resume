@@ -39,7 +39,9 @@ Why this works: Shows automation, repeatability, and configuration management ma
 
 # Kubernetes Upgrade (v1.14 → v1.23)
 
-Situation: Our kubernetes clusters were running [version 1.14](https://kubernetes.io/blog/2019/03/25/kubernetes-1-14-release-announcement/), which at the time was at three years old and no longer eligible for support. The clusters were provisioned years prior using a tool called [kops](https://kops.sigs.k8s.io/) by an engineer who was no longer with the company. The kops version used to provision the clusters was also years old and running a deprecated version. No one was familiar with kops and no one dared upgrade the clusters. However, our hand was forced when our production cluster could no longer scale out due to worker nodes failing to join the cluster due to a deprecated dependency in the kops script. The inability to scale out put our customers at risk, as our login service was often running at capacity, and we often needed to increase the deployment size to prevent failed login attempts.
+## Situation
+
+Our kubernetes clusters were running [version 1.14](https://kubernetes.io/blog/2019/03/25/kubernetes-1-14-release-announcement/), which at the time was at three years old and no longer eligible for support. The clusters were provisioned years prior using a tool called [kops](https://kops.sigs.k8s.io/) by an engineer who was no longer with the company. The kops version used to provision the clusters was also years old and running a deprecated version. No one was familiar with kops and no one dared upgrade the clusters. However, our hand was forced when our production cluster could no longer scale out due to worker nodes failing to join the cluster due to a deprecated dependency in the kops script. The inability to scale out put our customers at risk, as our login service was often running at capacity, and we often needed to increase the deployment size to prevent failed login attempts.
 
 ## Task
 
@@ -73,7 +75,9 @@ Automate the manual steps taken by the operator to resolve the pod scheduling is
 
 I used PodPriority and Preemption policies to provide the scheduler with enough context to resolve the scheduling issues. To do this, I worked with the development team to classify each service into an appropriate priority level: high, medium or low. Services with high priority, such as user login or pods serving the web front end, could preempt lower priority services. I tested the eviction behavior to ensure it functioned as we intended.
 
-Result: Redued manual operator toil. Captured the desired application state in code.  Improved release reliability and reduced deployment delays.
+## Result 
+
+Reduced manual operator toil. Captured the desired application state in code.  Improved release reliability and reduced deployment delays.
 
 # Rebuilt Machine Image Pipeline to Enable Developer Self-Service
 
@@ -132,3 +136,5 @@ Why this works: This positions you as someone who owns infrastructure-as-code mo
 # Custom Terraform Provider
 
 Built a custom Terraform provider to integrate internal platform APIs, replacing a manual, error-prone provisioning workflow with fully declarative Configuration-as-Code. Enabled teams to manage platform resources through version-controlled Terraform plans and eliminated inconsistent, operator-driven changes.
+
+# SCDP Unused VMs
