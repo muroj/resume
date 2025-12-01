@@ -10,6 +10,6 @@ Automate the manual steps taken by the operator to resolve the pod scheduling is
 
 I used PodPriority and Preemption policies to provide the scheduler with enough context to resolve the scheduling issues. To do this, I worked with the development team to classify each service into an appropriate priority level: high, medium or low. Services with high priority, such as user login or pods serving the web front end, could preempt lower priority services. I tested the eviction behavior to ensure it functioned as we intended.
 
-## Result 
+## Result
 
 Reduced manual operator toil. Captured the desired application state in code.  Improved release reliability and reduced deployment delays.

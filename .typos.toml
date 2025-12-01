@@ -1,0 +1,24 @@
+[files]
+extend-exclude = []
+ignore-hidden = true
+ignore-files = true
+ignore-dot = true
+ignore-vcs = true
+ignore-global = true
+ignore-parent = true
+
+[default]
+binary = false
+check-filename = true
+check-file = true
+unicode=true
+locale = "en"
+extend-ignore-re = []
+extend-ignore-identifiers-re = []
+
+[default.extend-words]
+aks = "aks"
+kops = "kops"
+
+[default.extend-identifiers]
+# <typo> = "<correction>"
