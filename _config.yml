@@ -9,3 +9,7 @@ kramdown:
   math_engine: mathjax
   syntax_highlighter: rouge
 theme: jekyll-theme-slate
+titles_from_headings:
+  enabled:     true
+  strip_title: false
+  collections: false
