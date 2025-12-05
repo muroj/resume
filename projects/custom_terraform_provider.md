@@ -1,0 +1,1 @@
+Built a custom Terraform provider to integrate internal platform APIs, replacing a manual, error-prone provisioning workflow with fully declarative Configuration-as-Code. Enabled teams to manage platform resources through version-controlled Terraform plans and eliminated inconsistent, operator-driven changes.
