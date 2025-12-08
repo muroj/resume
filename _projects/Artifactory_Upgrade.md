@@ -1,3 +1,7 @@
+---
+title: "Artifactory Upgrade"
+---
+
 # Artifactory Upgrade
 
 Our organization relied on a single self-hosted JFrog Artifactory instance as a repository for development artifacts, including container images, nuget packages, helm charts and other binary artifacts. The artifactory repo hosted nearly 2TB of data. As is common in growing organizations, ownership of artifactory was not well-defined. The primary users were developers, but they did not have the skills (or interest) to maintain it. The SRE team was the de-facto owner, but due to a series of events the original SMEs were no longer with the company. This created what is best described as a "situationship": artifactory was in desperate need of maintenance, but no one had the skill or motivation to do the needful. However, our hand was finally forced when we received an email from JFrog informing us that support for version 6 of Artifactory was ending in a few short weeks. Given how critical Artifactory was to our org, we had no choice but to upgrade to version 7 to ensure continued support. To add to the complexity, artifactory was hosted on a Windows VM. Managing windows VMs comes with added complexity, as there is normally second-class support for FOSS. I saw this as an opportunity to demonstrate my architecture, planning, and automation skills.

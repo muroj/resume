@@ -1,3 +1,7 @@
+---
+title: "Kubernetes Upgrade"
+---
+
 # Kubernetes Upgrade
 
 Our kubernetes clusters were running [version 1.14](https://kubernetes.io/blog/2019/03/25/kubernetes-1-14-release-announcement/), which at the time was at three years old and no longer eligible for support. The clusters were provisioned years prior using a tool called [kops](https://kops.sigs.k8s.io/) by an engineer who was no longer with the company. The kops version used to provision the clusters was also years old and running a deprecated version. No one was familiar with kops and no one dared upgrade the clusters. However, our hand was forced when our production cluster could no longer scale out due to worker nodes failing to join the cluster due to a deprecated dependency in the kops script. The inability to scale out put our customers at risk, as our login service was often running at capacity, and we often needed to increase the deployment size to prevent failed login attempts.

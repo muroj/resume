@@ -1,6 +1,10 @@
+---
+title: "Azure VM Disk Backups"
+---
+
 # Azure VM Disk Backups
 
-SRE receives frequent, ad-hoc requests from various teams to create azure VM disk snapshots (i.e backups). These requests oftentimes take *weeks* to fulfill due to conflicting priorities between teams. Historically SREs would create the snapshot manually via the azure console or the CLI. The process is manual, time-consuming, and takes an unnecessarily long time to fulfill causing frustration with the requesting team. In summary, it is toil, and a great opportunity for automation.
+SRE receives frequent, ad-hoc requests from various teams to create azure VM disk snapshots. Historically, SREs would create the snapshot manually via the azure console or the CLI. In some cases, these requests could take *weeks* to fulfill due to conflicting priorities between teams. The process is manual, time-consuming, and takes an unnecessarily long time to fulfill causing frustration with the requesting team. In summary, it is toil, and a great opportunity for automation.
 
 ## Task
 

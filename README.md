@@ -1,3 +1,8 @@
+---
+layout: default
+title: Intro
+---
+
 ## Joe Muro
 
 I have over ten years of experience in the IT industry. I began my career at IBM as a software developer for [z/OS](https://en.wikipedia.org/wiki/Z/OS), IBM’s flagship operating system for their Z mainframe (yes, mainframes still exist!). This role gave me a strong foundation in software engineering and exposure to a large organization transitioning from traditional waterfall development to lean agile practices.

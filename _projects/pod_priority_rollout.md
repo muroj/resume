@@ -1,3 +1,7 @@
+---
+title: "Priorities Matter"
+---
+
 # Implement PodPriorities to reduce toil
 
 Our software release cycle usually triggered a restart of all kubernetes Deployments and StatefulSets to pick up the latest container image version. This restart would normally result in several critical pods getting stuck in NotReady state due to insufficient resources on the worker nodes, even though there was sufficient capacity on the whole cluster. but the scheduler did not have enough context to ensure all pods would get scheduled. Resolving this would require manual operator intervention: an SRE would manually kill some non-critical pods to allow the critical pods to be scheduled. For any computer science nerds, this was an instance of the [bin-packing problem.](https://en.wikipedia.org/wiki/Bin_packing_problem).

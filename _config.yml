@@ -16,3 +16,25 @@ titles_from_headings:
 relative_links:
   enabled:     true
   collections: false
+readme_index:
+  with_frontmatter: true
+
+
+title: Joe Muro
+description: Joe Muro's project
+
+plugins:
+  - jekyll-readme-index
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "projects"
+    values:
+      layout: "default"
